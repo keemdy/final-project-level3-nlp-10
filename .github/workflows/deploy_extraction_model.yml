@@ -34,9 +34,9 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.CR_PAT }}
       - name: Copy Diretory
-          run: |
-              cp -r QA_model/data api/extraction-mrc/QA_model
-              ls api/extraction-mrc
+        run: |
+          cp -r QA_model/data api/extraction-mrc/QA_model
+          ls api/extraction-mrc
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
