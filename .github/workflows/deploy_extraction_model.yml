@@ -35,6 +35,7 @@ jobs:
           password: ${{ secrets.CR_PAT }}
       - name: Copy Diretory
         run: |
+          rm -rf api/extraction-mrc/QA_model
           cp -r QA_model/data api/extraction-mrc/QA_model
           ls api/extraction-mrc
       - name: Build and push
