@@ -3,7 +3,7 @@ FROM nvcr.io/nvidia/pytorch:21.11-py3
 # RUN nvidia-smi
 
 # ENV API_SERVER_TESTING TESTING
-ADD ./ /v
+ADD ./ /extraction
 # RUN ls -l /work
 # RUN cp -r /work/QA_model /work/api/extraction-mrc
 
