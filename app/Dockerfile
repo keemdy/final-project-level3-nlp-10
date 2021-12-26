@@ -11,3 +11,4 @@ WORKDIR /app
 CMD ["python", "myapp.py" ]
 
 EXPOSE 5000
+ 
