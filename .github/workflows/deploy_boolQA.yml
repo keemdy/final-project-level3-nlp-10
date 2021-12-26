@@ -35,6 +35,7 @@ jobs:
           password: ${{ secrets.CR_PAT }}
       - name: Copy Diretory
         run: |
+          rm -rf api/bool-qa/data
           cp -r QA_model/data api/bool-qa/data
           ls api/bool-qa
       - name: Build and push
