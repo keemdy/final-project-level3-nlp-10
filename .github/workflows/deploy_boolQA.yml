@@ -5,6 +5,7 @@ on:
     branches: [ main ]
     paths:
       - 'api/bool-qa/**'
+      - 'QA_model/**'
 env:
   DOCKER_IMAGE: ghcr.io/keemdy/final-project-level3-nlp-09
   VERSION: ${{ github.sha }}
