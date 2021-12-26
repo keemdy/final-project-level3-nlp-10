@@ -33,9 +33,9 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.CR_PAT }}
       - name: Copy Diretory
-          run: |
-              cp -r QA_model/data api/bool-qa/data
-              ls api/bool-qa
+        run: |
+          cp -r QA_model/data api/bool-qa/data
+          ls api/bool-qa
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
